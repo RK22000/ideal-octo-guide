@@ -9,33 +9,71 @@
   </head>
 
   <body>
-    <header class="overflow-hidden">
-      <div class="scale-110 hover:scale-100 transition duration-1000">
-        <div class="h-dvh bg-black flex items-center">
-          <img src="pics/PaperDragons.jpg" />
-        </div>
-        <div class="inset-0 absolute justify-center items-center flex">
-          <div class="text-center bg-black/70 w-full hover:bg-transparent text-white hover:text-transparent transition duration-1000">
-            <h1>Ideal Octo Guide</h1>
-            <p>This is the ideal octo guide</p>
+    <header>
+      <div class="size-full overflow-hidden">
+        <div class="scale-110 hover:scale-100 transition duration-1000">
+          <div class="h-dvh bg-black flex items-center">
+            <img src="pics/PaperDragons.jpg" />
+          </div>
+          <div class="inset-0 absolute bg-black/70 hover:bg-transparent transition duration-1000 justify-center items-center flex">
+            <div class="text-center bg-black/70 w-full hover:bg-transparent text-white hover:text-transparent transition duration-1000">
+              <h1>Ideal Octo Guide</h1>
+              <p>This is the ideal octo guide</p>
+            </div>
           </div>
         </div>
       </div>
+      <style>
+        nav button{
+          @apply bg-green-300 p-1 rounded-lg m-1 hover:scale-110 transition duration-75
+        }
+      </style>
+      <!-- stays sticky with the header element -->
+      <nav class="sticky top-0 bg-purple-500 nav">
+        <button><a href="/">Home Page</a></button>
+        <button><a href="">About</a></button>
+        <button><a href="">Blog</a></button>
+        <button><a href="https://github.com/RK22000/ideal-octo-guide">Github repo</a></button>
+      </nav>
+      <p>
+        This is like my 3<sup>rd</sup> attempt at making a personal site and sicking to it.
+        I dropped the first 2 cuz they looked too complex when I came back to them after going 
+        a while not looking at them. Both times I said, "Nah, I can make it simpler". And thats
+        how we meet here. An html tailwindcss site developed on a vite dev server with markdeep
+        blog pages. Hope that keeping it html and tailwind will keep this site feeling simple 
+        enough to edit and update when I come back to it at some arbitary point in the future 🍻
+      </p>
     </header>
+    <div class="h-screen w-10 bg-green-600"></div>
+    <h1>Check these out</h1>
     <style>
-      nav button{
-        @apply bg-green-300 p-1 rounded-lg m-1 hover:scale-110 transition duration-75
+      article {
+        @apply bg-black/60 rounded-xl aspect-[3/2] h-40 bg-center bg-cover bg-blend-overlay relative text-white hover:text-transparent transition duration-1000 overflow-hidden
       }
+      article h1 {
+        @apply absolute size-full items-center flex justify-center text-center text-2xl
+      }
+      article h2 {
+        @apply size-full absolute flex items-end justify-end p-2 text-xs
+      }
+      article p {
+        @apply text-transparent hover:text-white inset-0 p-2 absolute text-justify hover:backdrop-blur-sm text-[14px] transition duration-1000
+      }
+      /* article img {
+        @apply size-full
+      } */
     </style>
-    <nav class="sticky top-0 bg-purple-500 nav">
-      <button><a href="/">Home Page</a></button>
-      <button><a href="">About</a></button>
-      <button><a href="">Blog</a></button>
-    </nav>
-    <div class="h-screen w-10 bg-green-600"></div>
-    some content
-    <div class="h-screen w-10 bg-green-600"></div>
+    <article style="background-image: url('pics/simple_RRT.gif')">
+      <a href="https://rk22000.github.io/ROBTAA/blogs/animation_in_matplotlib.html" target="_blank" rel="noopener noreferrer">
+      <h1>Animation in Matplotlib</h1>
+      <h2>Tue - October 10, 2023</h2>
+      <p>
+        I've recently had a few opportunities to explore techniques in creating visualizations
+        using code. Amongst these techniques, I really want to write about how to create animations
+        in Matplotlib. I feel its not as accessible as it could be and I want it to be more accessible
+        for the next person who takes a crack at it after me.
+      </p>
+      </a>
+    </article>
   </body>
 </html>
-<!-- <img src="PaperDragons.jpg" class="absolute"> -->
-<!-- <div class="bg-red-500 absolute inset-10"></div> -->
