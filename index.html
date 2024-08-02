@@ -23,16 +23,13 @@
       </div>
     </div>
     <style>
-      nav button{
-        @apply bg-green-300 p-1 rounded-lg m-1 hover:scale-110 transition duration-75
-      }
     </style>
     <!-- stays sticky with the header element -->
     <nav class="sticky top-0 bg-purple-500 nav">
       <button><a href="/">Home Page</a></button>
       <button><a href="">About</a></button>
       <button><a href="">Blog</a></button>
-      <button><a href="https://github.com/RK22000/ideal-octo-guide">Github repo</a></button>
+      <button><a href="http://github.com/RK22000/ideal-octo-guide" target="_blank" rel="noopener noreferrer">Github repo</a></button>
     </nav>
     <p>
       This is like my 3<sup>rd</sup> attempt at making a personal site and sicking to it.
@@ -49,43 +46,32 @@
       <div class="size-10 bg-gray-400 end-0 sticky bottom-0"></div>
     </div>
     <h1>Check these out</h1>
-    <style>
-      article {
-        @apply bg-black/60 rounded-xl aspect-[3/2] h-40 w-fit bg-center bg-cover bg-blend-overlay relative text-white hover:text-transparent transition duration-1000 overflow-hidden
-      }
-      article h1 {
-        @apply absolute size-full items-center flex justify-center text-center text-2xl
-      }
-      article h2 {
-        @apply size-full absolute flex items-end justify-end p-2 text-xs
-      }
-      article p {
-        @apply text-transparent hover:text-white inset-0 p-2 absolute text-justify hover:backdrop-blur-sm text-[14px] transition duration-1000
-      }
-      /* article img {
-        @apply size-full
-      } */
-    </style>
-    <article style="background-image: url('pics/simple_RRT.gif')">
-      <a href="https://rk22000.github.io/ROBTAA/blogs/animation_in_matplotlib.html" target="_blank" rel="noopener noreferrer">
-      <h1>Animation in Matplotlib</h1>
-      <h2>Tue - October 10, 2023</h2>
-      <p>
-        I've recently had a few opportunities to explore techniques in creating visualizations
-        using code. Amongst these techniques, I really want to write about how to create animations
-        in Matplotlib. I feel its not as accessible as it could be and I want it to be more accessible
-        for the next person who takes a crack at it after me.
-      </p>
-      </a>
-    </article>
-    <article style="background-image: url('pics/explainedVisually.gif')">
-      <a href="https://setosa.io/ev/" target="_blank" rel="noopener noreferrer">
-      <h1>Stuff Explained Visually</h1>
-      <h2>Visualizations that make things intuitive</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus totam voluptates laudantium corporis nobis aspernatur repudiandae! Est placeat totam, eius, delectus quas neque architecto doloribus quos, facilis vero nihil modi!
-      </p>
-      </a>
-    </article>
+
+    <div class="flex flex-wrap gap-5 px-5">
+      <article class="postcard" style="background-image: url('pics/simple_RRT.gif')">
+        <a href="https://rk22000.github.io/ROBTAA/blogs/animation_in_matplotlib.html" target="_blank" rel="noopener noreferrer">
+        <h1>Animation in Matplotlib</h1>
+        <h2>Tue - October 10, 2023</h2>
+        <p>
+          I've recently had a few opportunities to explore techniques in creating visualizations
+          using code. Amongst these techniques, I really want to write about how to create animations
+          in Matplotlib. I feel its not as accessible as it could be and I want it to be more accessible
+          for the next person who takes a crack at it after me.
+        </p>
+        </a>
+      </article>
+      <article class="postcard" style="background-image: url('pics/explainedVisually.gif')">
+        <a href="https://setosa.io/ev/" target="_blank" rel="noopener noreferrer">
+        <h1>Stuff Explained Visually</h1>
+        <h2>Visualizations that make things intuitive</h2>
+        <p>
+          I found this site while exploring explainations of image kernels for convolution 
+          neural networks. This site creates intuitive visual explainations for some topics
+          math, cs, and data science.
+        </p>
+        </a>
+      </article>
+    </div>
+
   </body>
 </html>
