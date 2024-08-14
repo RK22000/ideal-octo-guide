@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/jpg" href="/pics/PaperDragons.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/index.css" rel="stylesheet" />
+  <title>Ideal Octo Guide's blog</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const blogList = document.getElementById("blog-list");
+      fetch("blogs/list.json")
+      .then(response => response.json())
+      .then(data => {
+        data.forEach(blog => {
+          const listItem = document.createElement("li");
+          const link = document.createElement("a");
+          link.href = blog.link;
+          link.textContent = `${blog.title} - ${blog.subtitle}`;
+          listItem.appendChild(link);
+          blogList.appendChild(listItem);
+        });
+      })
+    });
+  </script>
+</head>
+<body>
+  <h1>Blogs</h1>
+  <ul id="blog-list"></ul>
+</body>
