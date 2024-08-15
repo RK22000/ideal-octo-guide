@@ -1,0 +1,41 @@
+		**setting_fingerprint_driver_for_linux**
+	(Subheading), authored by raka
+
+I dual booted my windows machine with Pop!OS today to try out 
+[ZED](https://zed.dev/). While I had this I also fell in the rabbit hole of
+trying to enable the finger print reader for authentication. As I understood it
+from a little quacking around online, all I needed was `fprintd` and 
+`libpam-fprintd`. Unfortunately my fingerprint reader is not included in the 
+[list of suported devices](https://fprint.freedesktop.org/supported-devices.html).
+However thanks to the [Synaptics Tudor Driver Relinking Project](https://github.com/Popax21/synaTudor)
+my fingerprint scanner could be made to work with libfprint. Thanks Popax21 and
+everyone wo contributed to the project. Also thanks _u/16mhz_ for makeing the 
+[post](https://www.reddit.com/r/openSUSE/comments/10xzlxo/using_synaptics_06cb00be_fingerprint_with/?rdt=40038)
+highlighting the project
+
+
+
+
+Thing to note. While I'm able to log in using fingerprint, the fingerprint 
+login does not unlock the keychain in which my broswer stored its saved 
+passwords. So I still need to type out the password after unlocking
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>

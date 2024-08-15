@@ -3,5 +3,10 @@
         "link": "/routes/blogs/software_and_tools.md.html",
         "title": "Software and Tools",
         "subtitle": "A list of curious software and tools"
+    },
+    {
+      "link": "/routes/blog/setting_fingerprint_driver_for_linux.md.html",
+      "title": "Building fingerprint scanner driver for linux",
+      "subtitle": "How I set up fingerprint login with scanner that was unsupported by libfprint"
     }
 ]
