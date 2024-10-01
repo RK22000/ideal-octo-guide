@@ -7,20 +7,29 @@
   <link href="/index.css" rel="stylesheet" />
   <title>Ideal Octo Guide's blog</title>
   <script>
+    const blog_links = [
+      {
+        "link": "blogs/software_and_tools.md.html",
+        "title": "Software and Tools",
+        "subtitle": "A list of curious software and tools"
+      },
+      {
+        "link": "blogs/setting_fingerprint_driver_for_linux.md.html",
+        "title": "Building fingerprint scanner driver for linux",
+        "subtitle": "How I set up fingerprint login with scanner that was unsupported by libfprint"
+      }
+    ]
     document.addEventListener("DOMContentLoaded", function() {
       const blogList = document.getElementById("blog-list");
-      fetch("blogs/list.json")
-      .then(response => response.json())
-      .then(data => {
-        data.forEach(blog => {
+      blog_links
+        .forEach(blog => {
           const listItem = document.createElement("li");
           const link = document.createElement("a");
           link.href = blog.link;
           link.textContent = `${blog.title} - ${blog.subtitle}`;
           listItem.appendChild(link);
           blogList.appendChild(listItem);
-        });
-      })
+        })
     });
   </script>
 </head>
