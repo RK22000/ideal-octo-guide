@@ -6,7 +6,11 @@ const input = {};
 
 findHtmlFiles('.')
     .map(f=>resolve(f))
-    .forEach(f=>input[basename(f).split(".")[0]]=f);
+    .sort((a, b)=> a.split("/").length - b.split("/").length)
+    .forEach((f,i) => input[i]=f);
+
+// console.log("Pages being built")
+// console.log(input)
 
 export default defineConfig({
     build: {
