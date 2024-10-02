@@ -27,3 +27,4 @@ dist-ssr
 bun.lockb
 pics/
 drafts/
+**/draft/
