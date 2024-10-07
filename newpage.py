@@ -40,7 +40,7 @@ def make_file(page: str, author: str = None):
         print(f'\t\t**{name}**', file=f)
         print(f'\t(Subheading), authored by {author}', file=f) if author is not None else print(f'\t(Subheading)', file=f)
         print('\n'*20, file=f)
-        markdeep = r'<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>'
+        markdeep = r'<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="/markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>'
         print(markdeep, file=f)
     return page
 
