@@ -9,7 +9,7 @@ nav button{
 
 /* postcard */
 article.postcard {
-    @apply bg-black/60 rounded-xl aspect-[3/2] h-40 w-fit bg-center bg-cover bg-blend-overlay relative text-white hover:text-transparent transition duration-1000 overflow-hidden
+    @apply bg-black/60 hover:bg-transparent rounded-xl aspect-[3/2] h-40 w-fit bg-center bg-cover bg-blend-overlay relative text-white hover:text-transparent transition duration-1000 overflow-hidden
 }
 article.postcard h1 {
     @apply absolute size-full items-center flex justify-center text-center text-2xl
@@ -18,5 +18,5 @@ article.postcard h2 {
     @apply size-full absolute flex items-end justify-end p-2 text-xs
 }
 article.postcard p {
-    @apply text-transparent hover:text-white inset-0 p-2 absolute flex items-center text-justify hover:backdrop-blur-sm text-[14px] transition duration-1000
+    @apply text-transparent hover:text-white inset-0 p-2 absolute flex items-center text-justify hover:backdrop-blur-sm text-[14px] hover:bg-black/60 transition duration-1000
 }
